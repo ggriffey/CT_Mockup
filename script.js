@@ -13,7 +13,7 @@ const schedule1innerHTML = `<tr>  <td class="tcr">25 Nov 2016 </td> <td class="t
 
 // Handler Function to Change Schedules and Bgn Images
 const showMountainSchedule = (mtn) => {
-    scheduleBackdground.style.backgroundImage = `url("/Images/Mountain ${mtn}.png")`;
+    scheduleBackdground.style.backgroundImage = `url("./Images/Mountain ${mtn}.png")`;
     if (mtn === 1){
         mtn1.classList.add('active');
         mtn2.classList.remove('active');
