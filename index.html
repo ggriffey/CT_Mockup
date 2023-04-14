@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Los Angeles Mountains</title>
+  </head>
+  <body>
+    <div class="hero">
+      <nav id="hero-nav">
+        <img
+          src="/Images/logo.png"
+          alt="Los Angeles Mountains Logo"
+          class="logo"
+        />
+        <div class="page-links" id="accordion-container">
+          <button class="accordion" id="accordion-btn">
+            JUMP TO:
+          </button>
+          <div class="accordion-content links-container">
+            <a class="history-link" href="#history">01. History</a>
+            <a class="team-link" href="#climb">02. Team</a>
+          </div>
+        </div>
+      </nav>
+      <!-- <img id="hero-img" src="Images/Hero Mountain.png" alt='mountain image'/> -->
+    </div>
+    <nav id="sticky-nav">
+      <div class="company-w-logo">
+        <img
+          src="/Images/logo.png"
+          alt="Los Angeles Mountains Logo"
+          class="logo"
+        />
+        <div class="LAM">
+          <h1>LOSANGELES</h1>
+          <h2>MOUNTAINS</h2>
+        </div>
+      </div>
+      <div class="page-links">
+        <a href="#history">01. History</a>
+        <a href="#climb">02. Team</a>
+      </div>
+    </nav>
+
+    <div id="history" class="history">
+      <div class="history-wrapper">
+        <div class="history-position">
+          <div class="history-heading">
+            <h1 class="big-number">01.</h1>
+            <h2 >History</h2>
+            <div class="p-container">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
+                ante viverra, rutrum erat rutrum, consectetur mi. Proin at maximus
+                est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt
+                quam. Cras scelerisque id quam sed dignissim Pellentesque urna
+                nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus
+                suscipit dignissim tortor nec congue.
+              </p>
+            </div>
+          </div>  
+        </div>
+        <div class="carousel-container">
+          <div class="carousel">
+            <img
+              src="Images/carousel 1.png"
+              alt="person on mountaintop"
+              class="carousel-1"
+            />
+            <img
+              src="Images/carousel 2.png"
+              alt="misty mountaintop"
+              class="carousel-2"
+            />
+            <img
+              src="Images/carousel 1.png"
+              alt="person on mountaintop"
+              class="carousel-3"
+            />
+            <img
+              src="Images/carousel 2.png"
+              alt="misty mountaintop"
+              class="carousel-4"
+            />
+          </div>
+          <div class="ellipses">
+            <img src="/Images/ellipses.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="climb" class="climb">
+      <div class="climb-heading">
+        <h1 class="big-number">02.</h1>
+        <h2>CLIMB</h2>
+        <div class="p-container">
+          <p>
+            Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+            gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit
+            dignissim tortor nec congue.
+          </p>
+        </div>
+      </div>
+      <div class="mountain-tabs">
+        <a
+          id="mtn1"
+          class="mountain-link active 1"
+          onclick="showMountainSchedule(1)"
+          >Mountain 1</a
+        >
+        <a
+          id="mtn2"
+          class="mountain-link passive 2"
+          onclick="showMountainSchedule(2)"
+          >Mountain 2</a
+        >
+      </div>
+      <div class="schedule-background">
+        <div class="schedule">
+          <h3>SCHEDULE</h3>
+
+          <table id="scheduleTable">
+            <tr>
+              <td class="tcr">25 Nov 2016</td>
+              <td class="tcl">Vestibulum viverra</td>
+            </tr>
+            <tr>
+              <td class="tcr x">28 Nov 2016</td>
+              <td class="tcl x">Vestibulum viverra</td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td class="tcr x">18 Dec 2016</td>
+              <td class="tcl x">Vestibulum viverra</td>
+            </tr>
+            <tr></tr>
+            <tr>
+              <td class="tcr">7 Jan 2017</td>
+              <td class="tcl">Vestibulum viverra</td>
+            </tr>
+          </table>
+          <!-- <p class="schedule-info">25 Nov 2016		Vestibulum viverra</p>
+          <p class="schedule-info">28 Nov 2016		Vestibulum viverra</p>
+          <br>
+          <p class="schedule-info">18 Dec 2016		Vestibulum viverra</p>
+          <br>
+          <p class="schedule-info">7 Jan 2017     Vestibulum viverra</p>
+           -->
+        </div>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="company-w-logo">
+        <img
+          src="/Images/blueLogo.png"
+          alt="Los Angeles Mountains Logo"
+          class="logo"
+        />
+        <div class="LAM">
+          <h1>LOSANGELES</h1>
+          <h2>MOUNTAINS</h2>
+        </div>
+      </div>
+      <h5 class="copyright">COPYRIGHT 2016. ALL RIGHTS RESERVED.</h5>
+    </footer>
+  </body>
+</html>

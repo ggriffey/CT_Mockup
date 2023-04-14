@@ -1,0 +1,484 @@
+:root {
+  --dark-blue: #414f6b;
+  --light-blue: #455980;
+  --white: #fefeff;
+  --actual-grey: #686d76;
+  --light-grey: #b8bcc6;
+  --grey: #63769d;
+}
+
+@font-face {
+  font-family: Bebas Neue;
+  src: url(/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bebas Neue, Arial, sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 823px;
+  background-image: url(/Images/Hero\ Mountain.png);
+  background-size: cover;
+  resize: both;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    background-position: left 30% top 0%;
+  }
+}
+
+#hero-nav {
+  margin: 0 18%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+.page-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+}
+
+.page-links a {
+  margin: 0px 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: underline var(--white);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  letter-spacing: 3px;
+}
+
+#accordion-btn {
+  display: none;
+} 
+
+#accordion-container {
+  position: relative;
+}
+
+
+.accordion {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: block;
+}
+
+.links-container {
+  display: block;
+}
+
+@media (max-width: 760px) {
+  .links-container {
+    height: 70px;
+    width: 60%;
+    color: var(--white);
+    background-color: var(--white);
+    display: none;
+    position: absolute;
+    left: 68%;
+    top: 81%;
+  }
+  
+
+  #accordion-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  #accordion-btn {
+    background-color: var(--white);
+    display: block;
+    height: 30px;
+    width: 70px;
+    font-family: Bebas Neue, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  accordion-content {
+    display: none;
+  }
+
+  .history-link, .team-link {
+    position: absolute;
+    color: var(--light-blue) !important;
+    text-decoration: underline var(--light-blue) !important;
+    width: 70%;
+    left: 0;
+  }
+
+  .history-link {
+    top: 10%; 
+  }
+
+  .team-link {
+    top: 60%;
+  }
+}
+
+
+#sticky-nav {
+  width: 64%;
+  height: 60px;
+  background-color: var(--white);
+  padding: 10px 18%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+#sticky-nav h1,
+#sticky-nav h2 {
+  font-size: 29px;
+  letter-spacing: 0px;
+  line-height: 23px;
+  text-transform: uppercase;
+  font-family: Bebas Neue;
+}
+
+#sticky-nav h2 {
+  color: var(--dark-blue);
+}
+
+#sticky-nav .page-links a {
+  color: var(--dark-blue);
+  margin: 0px 10px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: underline var(--dark-blue);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  letter-spacing: 3px;
+}
+
+.LAM {
+  display: block;
+  margin-left: 10px;
+}
+
+.company-w-logo {
+  display: flex;
+  width: 250px;
+  justify-content: start;
+}
+
+.big-number {
+  opacity: 0.502;
+  font-size: 136px;
+  font-weight: 700;
+}
+
+.history .big-number {
+  color: var(--dark-blue);
+}
+
+.climb .big-number {
+  color: var(--actual-grey);
+}
+
+.history-heading,
+.climb-heading {
+  font-size: 24px;
+  color: var(--dark-blue);
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.history {
+  width: 100%;
+  height: 900px;
+  background-image: url(/Images/peak1.png);
+  background-size: cover;
+  resize: both;
+}
+
+.history-wrapper {
+  height: 100%;
+  position: relative;
+}
+
+.history p,
+.climb p {
+  font-size: 14px;
+  line-height: 24px;
+  overflow: hidden;
+  color: #232323;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.history p {
+  height: 150px;
+}
+
+.history .p-container,
+.climb .p-container {
+  position: relative;
+  width: 100%;
+  height: 74px;
+}
+
+.history-position {
+  width: 64%;
+  padding: 100px 18% 0 18%;
+  height: 300px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+}
+
+.history p {
+  position: relative;
+  left: 45px;
+  top: -80px;
+}
+
+.history-position h2 {
+  font-size: 36px;
+  position: relative;
+  left: 110px;
+  top: -100px;
+}
+
+.climb-heading p {
+  position: absolute;
+  width: 100%;
+  left: 4px;
+  top: -7px;
+}
+
+.carousel-container {
+  height: 175px;
+  width: 60%;
+  padding: 0 20%;
+  background-color: var(--light-blue);
+  opacity: 0.8;
+  position: absolute;
+  bottom: 0px;
+}
+
+.carousel {
+  height: 145px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.carousel img {
+  height: 82%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 1040px) {
+  .carousel-container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-3, .carousel-4 {
+    display: none;
+  }
+}
+
+.ellipses {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ellipses img {
+  height: 20%;
+  width: auto;
+  position: relative;
+  left: -0.2%;
+}
+
+.climb {
+  width: 100%;
+  height: auto;
+}
+
+.climb-heading {
+  width: 64%;
+  padding: 0 18%;
+  height: 150px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.climb-heading h2 {
+  position: relative;
+  left: -23px;
+  top: 4px;
+}
+
+.mountain-tabs {
+  width: 64%;
+  padding: 0 18%;
+  background-color: var(--dark-blue);
+  height: 34px;
+  display: flex;
+  align-items: center;
+}
+
+.mountain-tabs a {
+  letter-spacing: 1px;
+  font-size: 20px;
+  padding: 5px 15px;
+  background-color: var(--dark-blue);
+  color: var(--light-grey);
+}
+
+.mountain-tabs .active {
+  color: var(--dark-blue);
+  background-color: var(--light-grey);
+  text-decoration: underline var(--dark-blue);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.mountain-tabs:hover {
+  cursor: pointer;
+}
+
+.schedule-background {
+  height: 475px;
+  background-size: 100% 170%;
+  resize: both;
+  background-position: left 70% top 80%;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.schedule {
+  background-color: rgba(254, 254, 255, 0.7);
+  height: 36%;
+  width: 18%;
+  padding: 20px 36px;
+  position: relative;
+  left: 22%;
+  top: 16%;
+  overflow: hidden;
+}
+
+@media (max-width: 760px) {
+  .schedule {
+    height: 44%;
+  }
+}
+
+.schedule h3 {
+  font-size: 36px;
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+.schedule td {
+  width: 70%;
+  opacity: 0.6;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: right;
+}
+
+.schedule .tcr {
+  padding-right: 20px;
+}
+
+.schedule .tcl {
+  padding-left: 20px;
+}
+
+.schedule .x {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 760px) {
+  .schedule td{
+    font-size: 11px;
+    width: 60%;
+  }
+
+  .schedule h3 {
+    font-size: 20px;
+  }
+
+  .schedule .tcr {
+    padding-right: 10px;
+  }
+  
+  .schedule .tcl {
+    padding-left: 10px;
+  }
+  
+  .schedule .x {
+    padding-bottom: 10px;
+  }
+}
+
+#footer {
+  width: 64%;
+  height: 60px;
+  background-color: var(--dark-blue);
+  padding: 10px 18%;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer h1,
+#footer h2 {
+  font-size: 21px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: var(--grey);
+}
+
+.copyright {
+  color: var(--grey);
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-size: 10px;
+}
