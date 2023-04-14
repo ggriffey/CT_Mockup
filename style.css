@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: Bebas Neue;
-  src: url(../Mockup\ Site/Bebas_Neue/BebasNeue-Regular.ttf);
+  src: url('../Mockup\ Site/Bebas_Neue/BebasNeue-Regular.ttf');
 }
 
 * {
@@ -21,7 +21,7 @@
 .hero {
   width: 100%;
   height: 823px;
-  background-image: url(/Images/Hero\ Mountain.png);
+  background-image: url('./Images/Hero\ Mountain.png');
   background-size: cover;
   resize: both;
 }
@@ -217,7 +217,7 @@
 .history {
   width: 100%;
   height: 900px;
-  background-image: url(/Images/peak1.png);
+  background-image: url('./Images/peak1.png');
   background-size: cover;
   resize: both;
 }
